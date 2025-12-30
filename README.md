@@ -1,73 +1,111 @@
-# React + TypeScript + Vite
+🌍 VisaConsulting — Plataforma de Consultoria de Vistos & Imigração
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web moderna desenvolvida com React + TypeScript + Vite, criada para auxiliar clientes no processo de orientação, preparação e acompanhamento de vistos e imigração, oferecendo uma experiência clara, intuitiva e profissional.
 
-Currently, two official plugins are available:
+✨ Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O VisaConsulting é um site institucional e interativo para uma empresa de consultoria migratória.
+O objetivo do projeto é:
 
-## React Compiler
+Apresentar os serviços de consultoria de vistos de forma clara e confiável
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Guiar o usuário sobre os tipos de vistos e processos migratórios
 
-## Expanding the ESLint configuration
+Facilitar o contato e o pré-atendimento do cliente
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Oferecer uma navegação fluida e responsiva
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🧩 Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Página inicial institucional com apresentação da empresa
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Seção de serviços (Tipos de visto: turismo, estudo, trabalho, imigração)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Fluxo orientativo passo a passo do processo de visto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Sistema de navegação com React Router DOM
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Componentes reutilizáveis e tipados com TypeScript
+
+Layout responsivo (desktop, tablet e mobile)
+
+Design elegante e profissional (paleta navy + gold)
+
+Pronto para integração com backend futuramente (formulários, CRM, etc.)
+
+🛠️ Tecnologias Utilizadas
+
+React — biblioteca para construção da interface
+
+TypeScript — tipagem estática para maior segurança e escalabilidade
+
+Vite — bundler rápido para desenvolvimento e build
+
+React Router DOM — navegação entre páginas
+
+Tailwind CSS (ou CSS Modules / Styled Components — conforme você estiver usando)
+
+ESLint + TypeScript ESLint — qualidade e padronização de código
+
+📁 Estrutura do Projeto
+src/
+ ├─ components/        # Componentes reutilizáveis (NavLink, Header, Footer, etc.)
+ ├─ pages/             # Páginas (Home, Services, Process, Contact, etc.)
+ ├─ lib/               # Funções utilitárias (cn, helpers, etc.)
+ ├─ routes/            # Definição de rotas (se existir separado)
+ ├─ assets/            # Imagens e ícones
+ ├─ App.tsx            # Configuração principal do app
+ └─ main.tsx           # Ponto de entrada
+
+▶️ Como Rodar o Projeto
+1. Clone o repositório
+git clone https://github.com/seu-usuario/visa-consulting.git
+cd visa-consulting
+
+2. Instale as dependências
+npm install
+
+3. Rode o projeto
+npm run dev
+
+
+Acesse em: http://localhost:5173
+
+🔀 Navegação (React Router)
+
+O projeto utiliza react-router-dom para controle de rotas:
+
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/services" element={<Services />} />
+  <Route path="/process" element={<Process />} />
+  <Route path="/contact" element={<Contact />} />
+</Routes>
+
+🎨 Design & Identidade Visual
+
+Paleta principal: Navy + Gold
+
+Tipografia moderna e legível
+
+Visual institucional, elegante e confiável
+
+Foco em UX para reduzir fricção no entendimento do processo migratório
+
+🚀 Próximos Passos
+
+Integração com backend (Node + MongoDB)
+
+Envio de formulários para API / CRM
+
+Dashboard administrativo para a consultoria
+
+Autenticação de usuários
+
+Sistema de agendamentos
+
+👩‍💻 Autora
+
+Desenvolvido por Lidiane (Lid.Dev)
+Desenvolvedora Front-End em transição para Full Stack 🚀
+Especializada em interfaces modernas, performáticas e orientadas à experiência do usuário.
