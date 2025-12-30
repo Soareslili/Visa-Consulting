@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@import "tailwindcss";
+
+
+@theme {
+
+    --font-Mont: 'Montserrat', sans-serif;
+
+     --color-background: #FFFFFF;
+  --color-foreground: #041A33;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #041A33;
+
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #041A33;
+
+  --color-primary: #041A33;
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: #F3F7FA;
+  --color-secondary-foreground: #041A33;
+
+  --color-muted: #F3F7FA;
+  --color-muted-foreground: #6B7280;
+
+  --color-accent: #E6B44A;
+  --color-accent-foreground: #041A33;
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+
+  --color-border: #E5EAF0;
+  --color-input: #E5EAF0;
+  --color-ring: #E6B44A;
+
+  --color-radius: 0.5rem;
+
+  --color-navy: #041A33;
+  --color-navy-light: #0A2C4D;
+  --color-navy-dark: #020F1F;
+
+  --color-gold: #E6B44A;
+  --color-gold-light: #F1CB7A;
+  --color-gold-dark: #C99A2F;
+
+  --gradient-primary: linear-gradient(135deg, #041A33 0%, #0A2C4D 100%);
+  --gradient-gold: linear-gradient(135deg, #E6B44A 0%, #F1CB7A 100%);
+  --gradient-hero: linear-gradient(
+    135deg,
+    rgba(4, 26, 51, 0.97) 0%,
+    rgba(10, 44, 77, 0.95) 100%
+  );
+
+  --shadow-elegant: 0 10px 40px -10px rgba(4, 26, 51, 0.2);
+  --shadow-gold: 0 8px 30px -8px rgba(230, 180, 74, 0.3);
+  --shadow-card: 0 4px 20px -4px rgba(4, 26, 51, 0.1);
+
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --color-sidebar-background: #FAFAFA;
+  --color-sidebar-foreground: #3F3F46;
+  --color-sidebar-primary: #18181B;
+  --color-sidebar-primary-foreground: #FAFAFA;
+  --color-sidebar-accent: #F4F4F5;
+  --color-sidebar-accent-foreground: #18181B;
+  --color-sidebar-border: #E4E4E7;
+  --color-sidebar-ring: #3B82F6;
+}
+   
+
+
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
+
+
