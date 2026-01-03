@@ -10,7 +10,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="py-20 bg-primary">
+    <section className="py-20 bg-secondary/10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -25,10 +25,10 @@ const StatsSection = () => {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center">
                 <stat.icon className="text-accent" size={32} />
               </div>
-              <div className="text-4xl font-bold text-primary-foreground mb-2">
+              <div className="text-4xl font-bold text-primary mb-2">
                 {stat.value}
               </div>
-              <div className="text-primary-foreground/80">{stat.label}</div>
+              <div className="text-primary-primary/80">{stat.label}</div>
             </motion.div>
           ))}
         </div>
