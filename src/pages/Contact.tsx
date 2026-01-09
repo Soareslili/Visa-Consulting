@@ -34,7 +34,7 @@ const Contact = () => {
 
   return (
     <div className="pt-20">
-      {/* Hero Section */}
+   
       <section className="py-24 bg-gradient-to-b from-primary to-primary/90">
         <div className="container mx-auto px-4">
           <motion.div
@@ -54,11 +54,11 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+    
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-            {/* Contact Form */}
+           
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -164,7 +164,7 @@ const Contact = () => {
               </form>
             </motion.div>
 
-            {/* Contact Info */}
+         
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}

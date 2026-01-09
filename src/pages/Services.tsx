@@ -89,7 +89,7 @@ const Services = () => {
 
   return (
     <div className="pt-20">
-      {/* Hero Section */}
+    
       <section className="py-24 bg-gradient-to-b from-primary to-primary/90">
         <div className="container mx-auto px-4">
           <motion.div
@@ -108,7 +108,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+ 
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -150,7 +150,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+  
       <section className="py-24 gradient-primary">
         <div className="container mx-auto px-4 text-center">
           <motion.div

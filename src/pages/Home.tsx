@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
-import { ArrowRight, Plane, GraduationCap, Briefcase, Users, Home as HomeIcon, RefreshCw } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroImage from "../assets/HeroVisa.png";
 
 import StatsSection from "../components/StatsSection";
@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
+     
       <section className="relative min-h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -60,12 +60,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+   
       <StatsSection />
 
      
 
-      {/* CTA Section */}
+   
       <section className="py-24 gradient-primary">
         <div className="container mx-auto px-4 text-center">
           <motion.div
